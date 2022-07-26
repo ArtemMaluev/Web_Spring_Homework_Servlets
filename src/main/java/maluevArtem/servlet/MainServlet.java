@@ -1,5 +1,6 @@
 package maluevArtem.servlet;
 
+import maluevArtem.config.JavaConfig;
 import maluevArtem.controller.PostController;
 import maluevArtem.exception.NotFoundException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -19,7 +20,7 @@ public class MainServlet extends HttpServlet {
 
     @Override
     public void init() {
-        final var context = new AnnotationConfigApplicationContext("maluevArtem");
+        final var context = new AnnotationConfigApplicationContext(JavaConfig.class);
         controller = context.getBean(PostController.class);
     }
 

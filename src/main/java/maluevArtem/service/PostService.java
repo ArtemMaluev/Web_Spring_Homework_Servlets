@@ -3,11 +3,9 @@ package maluevArtem.service;
 import maluevArtem.exception.NotFoundException;
 import maluevArtem.model.Post;
 import maluevArtem.repository.PostRepository;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public class PostService {
     private final PostRepository repository;
 

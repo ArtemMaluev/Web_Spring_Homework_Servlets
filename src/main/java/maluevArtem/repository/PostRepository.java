@@ -2,14 +2,12 @@ package maluevArtem.repository;
 
 import maluevArtem.exception.NotFoundException;
 import maluevArtem.model.Post;
-import org.springframework.stereotype.Repository;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 // Stub
-@Repository
 public class PostRepository {
 
     private final Map<Long, Post> listPostsMap;
